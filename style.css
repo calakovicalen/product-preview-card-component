@@ -134,6 +134,10 @@ button {
     flex-direction: row;
   }
 
+  .card-content header {
+    gap: 1.25rem;
+  }
+
   .card-content {
     justify-content: center;
     align-items: center;
