@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1.5rem 1rem;
+  background: #f2eae2;
+}
+
+main {
+  background: #ffff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  max-inline-size: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.card-content header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+header h1 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #1c232b;
+}
+
+header p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 15px;
+  letter-spacing: 5px;
+  color: #6c7289;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 164%;
+  color: #6c7289;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.price-container .price {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #3d8168;
+}
+
+.price-container .discount {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 177%;
+  text-decoration-line: line-through;
+  color: #6c7289;
+}
+
+button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  background: #3d8168;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (min-width: 24.5rem) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    width: 37.5rem;
+  }
+
+  .card-container {
+    flex-direction: row;
+  }
+
+  .card-content {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 50%;
+    gap: 1.5rem;
+  }
+
+  .image-container {
+    width: 50%;
+  }
+}
